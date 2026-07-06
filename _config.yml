@@ -1,0 +1,27 @@
+title: AllWeatherOS
+description: 경제의 모든 계절에 대응하는 공익 금융 지식 블로그
+url: ""
+baseurl: ""
+lang: ko-KR
+timezone: Asia/Seoul
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  categories:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: AllWeatherOS Editorial Desk
+  - scope:
+      path: ""
+    values:
+      layout: default

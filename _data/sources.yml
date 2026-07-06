@@ -1,0 +1,34 @@
+preferred_commentary_sources:
+  - name: 삼프로TV
+    role: 거시경제·시장 전문가 인터뷰와 경제 해설 인사이트
+  - name: 언더스탠딩
+    role: 산업·경제 구조 해설과 딥다이브 인사이트
+  - name: 슈카월드
+    role: 대중 경제 이슈와 트렌드 포착
+  - name: 머니코믹스
+    role: 금융 개념의 쉬운 설명과 대중적 이해 보조
+  - name: 소수몽키
+    role: 미국주식·배당·장기투자 관점 참고
+
+official_data_sources:
+  - name: 한국은행 경제통계시스템 ECOS
+    url: https://ecos.bok.or.kr/
+  - name: 금융감독원 전자공시시스템 DART
+    url: https://dart.fss.or.kr/
+  - name: KRX 정보데이터시스템
+    url: https://data.krx.co.kr/
+  - name: 금융투자협회 채권정보센터
+    url: https://www.kofiabond.or.kr/
+  - name: FRED Economic Data
+    url: https://fred.stlouisfed.org/
+  - name: U.S. Bureau of Labor Statistics
+    url: https://www.bls.gov/
+  - name: U.S. Bureau of Economic Analysis
+    url: https://www.bea.gov/
+  - name: U.S. Treasury
+    url: https://home.treasury.gov/
+
+source_policy:
+  - 유튜브·미디어 채널은 해석과 인사이트 참고용으로 사용한다.
+  - 수치, 제도, 가격, 금리, 환율은 가능한 공식 데이터 또는 운용사·거래소 자료로 교차검증한다.
+  - 계획, 전망, 시행, 확정, 법제화 여부를 구분한다.
