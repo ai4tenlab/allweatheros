@@ -1,7 +1,7 @@
 title: AllWeatherOS
 description: 경제의 모든 계절에 대응하는 공익 금융 지식 블로그
-url: ""
-baseurl: ""
+url: "https://ai4tenlab.github.io"
+baseurl: "/allweatheros"
 lang: ko-KR
 timezone: Asia/Seoul
 markdown: kramdown

@@ -11,9 +11,9 @@ AllWeatherOS는 ISA·연금저축·IRP 같은 절세계좌를 중심으로 ETF, 
 
 ## 3줄 요약
 
-- AllWeatherOS는 특정 상품 추천이 아니라 **금융 문해력과 자산배분 판단력**을 높이는 공익 콘텐츠입니다.
-- 매일 경제·금융·거시 뉴스가 어떤 자산군에 영향을 주는지 **객관적·출처 기반**으로 설명합니다.
-- 모든 글은 AEO·GEO를 고려해 **정의, 표, FAQ, 출처, 면책문구**를 포함합니다.
+- AllWeatherOS는 특정 상품 추천이 아니라 <strong>금융 문해력과 자산배분 판단력</strong>을 높이는 공익 콘텐츠입니다.
+- 매일 경제·금융·거시 뉴스가 어떤 자산군에 영향을 주는지 <strong>객관적·출처 기반</strong>으로 설명합니다.
+- 모든 글은 AEO·GEO를 고려해 <strong>정의, 표, FAQ, 출처, 면책문구</strong>를 포함합니다.
 
 ## 주요 카테고리
 
@@ -27,4 +27,6 @@ AllWeatherOS는 ISA·연금저축·IRP 같은 절세계좌를 중심으로 ETF, 
 
 ## 최신 글
 
-- [AllWeatherOS란 무엇인가?](/all-weather/2026/07/06/what-is-allweatheros/)
+{% for post in site.posts limit:5 %}
+- [{{ post.title }}]({{ post.url | relative_url }})
+{% endfor %}
