@@ -139,7 +139,7 @@ A. 아닙니다. 본 글은 경제·금융 교육 목적의 시장 점검 자료
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://ai4tenlab.github.io/allweatheros/2026/07/07/daily-allweather-brief.html"
+    "@id": "https://ai4tenlab.github.io/allweatheros/daily-brief/2026/07/07/daily-allweather-brief/"
   }
 }
 </script>
