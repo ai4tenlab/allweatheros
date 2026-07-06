@@ -1,34 +1,98 @@
-preferred_commentary_sources:
-  - name: 삼프로TV
-    role: 거시경제·시장 전문가 인터뷰와 경제 해설 인사이트
-  - name: 언더스탠딩
-    role: 산업·경제 구조 해설과 딥다이브 인사이트
-  - name: 슈카월드
-    role: 대중 경제 이슈와 트렌드 포착
-  - name: 머니코믹스
-    role: 금융 개념의 쉬운 설명과 대중적 이해 보조
-  - name: 소수몽키
-    role: 미국주식·배당·장기투자 관점 참고
+primary_official_sources:
+  korea:
+    - name: 한국은행 경제통계시스템 ECOS
+      url: https://ecos.bok.or.kr/
+      role: 기준금리, 환율, 통화, 물가, 거시경제 통계
+    - name: 한국은행 보도자료
+      url: https://www.bok.or.kr/portal/bbs/P0000559/list.do?menuNo=200690
+      role: 통화정책, 금융안정, 경제전망 원문
+    - name: 통계청 국가통계포털 KOSIS
+      url: https://kosis.kr/
+      role: 물가, 고용, 인구, 산업활동 공식 통계
+    - name: 기획재정부
+      url: https://www.moef.go.kr/
+      role: 경제정책방향, 세제, 재정, 국채 정책
+    - name: 금융위원회
+      url: https://www.fsc.go.kr/
+      role: 금융정책, 자본시장 제도, ISA·연금 관련 정책
+    - name: 금융감독원
+      url: https://www.fss.or.kr/
+      role: 금융소비자 보호, 금융상품 유의사항, 감독 자료
+    - name: 금융감독원 전자공시시스템 DART
+      url: https://dart.fss.or.kr/
+      role: 상장사·금융회사 공시 원문
+    - name: KRX 정보데이터시스템
+      url: https://data.krx.co.kr/
+      role: 국내 상장 ETF·주식·지수·거래 데이터
+    - name: 금융투자협회 채권정보센터
+      url: https://www.kofiabond.or.kr/
+      role: 국내 채권 금리, 수익률, 채권시장 통계
+    - name: 예탁결제원 SEIBro
+      url: https://seibro.or.kr/
+      role: ETF 분배금, 종목 기초정보, 증권 정보
+    - name: 대한민국 정책브리핑
+      url: https://www.korea.kr/
+      role: 정부 정책 원문과 부처 발표 확인
+  global:
+    - name: Federal Reserve
+      url: https://www.federalreserve.gov/
+      role: FOMC, 미국 기준금리, 통화정책 원문
+    - name: FRED Economic Data
+      url: https://fred.stlouisfed.org/
+      role: 미국·글로벌 거시경제 시계열 데이터
+    - name: U.S. Treasury
+      url: https://home.treasury.gov/
+      role: 미국 국채금리, 재무부 정책, 환율 보고서
+    - name: U.S. Bureau of Labor Statistics
+      url: https://www.bls.gov/
+      role: CPI, 고용, 임금 등 미국 공식 통계
+    - name: U.S. Bureau of Economic Analysis
+      url: https://www.bea.gov/
+      role: GDP, PCE, 국민계정 공식 통계
+    - name: IMF Data
+      url: https://www.imf.org/en/Data
+      role: 세계경제, 외환, 금융안정 관련 통계
+    - name: World Bank Data
+      url: https://data.worldbank.org/
+      role: 국가별 장기 경제·개발 지표
+    - name: OECD Data
+      url: https://data.oecd.org/
+      role: 선진국 비교 통계와 경기선행지표
+    - name: BIS
+      url: https://www.bis.org/
+      role: 글로벌 금융안정, 은행, 신용, 부채 관련 자료
 
-official_data_sources:
-  - name: 한국은행 경제통계시스템 ECOS
-    url: https://ecos.bok.or.kr/
-  - name: 금융감독원 전자공시시스템 DART
-    url: https://dart.fss.or.kr/
-  - name: KRX 정보데이터시스템
-    url: https://data.krx.co.kr/
-  - name: 금융투자협회 채권정보센터
-    url: https://www.kofiabond.or.kr/
-  - name: FRED Economic Data
-    url: https://fred.stlouisfed.org/
-  - name: U.S. Bureau of Labor Statistics
-    url: https://www.bls.gov/
-  - name: U.S. Bureau of Economic Analysis
-    url: https://www.bea.gov/
-  - name: U.S. Treasury
-    url: https://home.treasury.gov/
+market_reference_sources:
+  - name: CME FedWatch
+    url: https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html
+    role: 시장이 반영하는 연준 금리 확률 참고
+  - name: CBOE VIX
+    url: https://www.cboe.com/tradable_products/vix/
+    role: 변동성 지표 확인
+  - name: S&P Dow Jones Indices
+    url: https://www.spglobal.com/spdji/
+    role: S&P500 등 지수 방법론과 공식 지수 정보
+  - name: NASDAQ Indexes
+    url: https://indexes.nasdaqomx.com/
+    role: Nasdaq100 등 지수 공식 정보
+
+asset_manager_sources:
+  - name: Samsung KODEX
+    url: https://www.samsungfund.com/etf/main.do
+    role: KODEX ETF 상품 설명서, 구성종목, 분배금, 비용
+  - name: Mirae Asset TIGER ETF
+    url: https://www.tigeretf.com/
+    role: TIGER ETF 상품 정보와 공시 자료
+  - name: Korea Investment ACE ETF
+    url: https://www.aceetf.co.kr/
+    role: ACE ETF 상품 정보와 공시 자료
+  - name: KB RISE ETF
+    url: https://www.riseetf.co.kr/
+    role: RISE ETF 상품 정보와 공시 자료
 
 source_policy:
-  - 유튜브·미디어 채널은 해석과 인사이트 참고용으로 사용한다.
-  - 수치, 제도, 가격, 금리, 환율은 가능한 공식 데이터 또는 운용사·거래소 자료로 교차검증한다.
+  - 유튜브·개인 미디어 채널은 공식 출처로 사용하지 않는다.
+  - 경제 해석은 가능하면 중앙은행, 정부, 거래소, 국제기구, 운용사 원문을 우선 확인한다.
+  - 숫자, 제도, 가격, 금리, 환율, ETF 정보는 공식 데이터 또는 운용사·거래소 자료로 교차검증한다.
+  - 언론 보도는 보조 자료로만 활용하며, 핵심 팩트는 원문 발표와 데이터로 확인한다.
   - 계획, 전망, 시행, 확정, 법제화 여부를 구분한다.
