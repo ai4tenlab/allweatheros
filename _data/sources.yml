@@ -63,6 +63,9 @@ primary_official_sources:
       role: 글로벌 금융안정, 은행, 신용, 부채 관련 자료
 
 market_reference_sources:
+  - name: 네이버페이 증권
+    url: https://stock.naver.com/
+    role: 한국 투자자가 확인하기 쉬운 국내외 지수, 환율, 원자재, ETF, 뉴스 흐름 참고. 단, 공식 원천 데이터는 한국은행·KRX·금융투자협회·운용사·거래소 자료로 교차검증
   - name: CME FedWatch
     url: https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html
     role: 시장이 반영하는 연준 금리 확률 참고
