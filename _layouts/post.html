@@ -7,5 +7,10 @@ layout: default
     <h1>{{ page.title }}</h1>
     <p class="meta">기준일: {{ page.date | date: "%Y-%m-%d" }} · 작성: {{ page.author | default: site.author }}</p>
   </header>
+  {% if page.image %}
+  <figure class="post-thumbnail">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}" loading="lazy">
+  </figure>
+  {% endif %}
   {{ content }}
 </article>

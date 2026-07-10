@@ -11,7 +11,8 @@
 4. 한국 독자/KST 기준으로 공식·권위 출처를 우선 확인한다: 한국은행, KRX, 금융투자협회, 금융위/금감원, 기재부, KOSIS, 운용사 원문, FRED/Fed/US Treasury/BLS/BEA/IMF/OECD 등.
 5. 미국 데이터는 시차를 명확히 표시하고, 한국 출처로 환율·국내금리·KRX ETF/지수·정책 변수를 보강한다.
 6. 글 구조는 반드시 포함한다.
-   - YAML frontmatter: layout/title/date/categories/description
+   - YAML frontmatter: layout/title/date/categories/description/image/image_alt
+   - 16:9 K-드라마형 인물 중심 썸네일 생성 및 `assets/images/thumbnails/YYYY-MM-DD-slug.png` 저장
    - 3줄 요약
    - 한 문장 답변
    - 오늘의 시장 한눈에 보기 표
@@ -24,23 +25,30 @@
    - 투자 유의사항
    - Article and FAQPage JSON-LD
 7. 안전 문구: “본 글은 경제·금융 교육 목적이며 특정 금융상품의 매수·매도 추천이 아닙니다.”를 포함한다. 개인 보유종목·진입가 등 민감정보는 절대 노출하지 않는다.
-8. 모바일 친화 규칙:
+8. 썸네일 생성 규칙:
+   - `k-drama-blog-thumbnail` 스킬 기준으로 16:9 프리미엄 K-드라마형 썸네일을 생성한다.
+   - 반드시 주제와 연관된 한국 인물이 등장해야 한다. 금융 글은 개인투자자·직장인·부부·금융교육자 중 주제에 맞게 고른다.
+   - 이미지 안에는 글자, 로고, 워터마크, 정치 상징, 국기, 특정 금융사 로고를 넣지 않는다.
+   - 저장 경로는 `assets/images/thumbnails/YYYY-MM-DD-slug.png`이고 front matter `image`, `image_alt`에 반영한다.
+   - 발행 후 이미지 HTTP 200, 본문 `.post-thumbnail`, `og:image`, `twitter:card=summary_large_image`를 확인한다.
+9. 모바일 친화 규칙:
    - 표는 AEO/GEO를 위해 유지하되, 모바일에서 한글이 세로로 찢어지지 않도록 너무 많은 열을 만들지 않는다.
    - 점수표/시장표/ETF표는 가능하면 핵심 열 4~6개로 제한하고, 긴 설명은 표 밖 문단이나 체크리스트로 뺀다.
    - 발행 후 블로그와 뉴스레터 모두 표가 모바일에서 강제 압축되지 않는지 확인한다.
-9. 검증:
+10. 검증:
    - 필수 섹션 확인
    - FAQ 5개 이상 확인
    - JSON-LD 존재 확인
    - 출처 URL 접근 가능 여부 확인
+   - 썸네일 파일 존재, 이미지 HTTP 200, `.post-thumbnail`, `og:image`, `twitter:card` 확인
    - `git diff --check`
    - `git status --short`
-10. 커밋/푸시:
+11. 커밋/푸시:
    - `git add .`
    - `git commit -m "post: add YYYY-MM-DD AllWeatherOS daily brief"`
    - `git push origin main`
-11. GitHub Pages URL을 확인한다.
-12. 새 글을 실제로 발행한 경우에만 Resend 뉴스레터 알림을 보낸다. 중복 발행 방지로 검증만 한 날은 이메일을 보내지 않는다.
+12. GitHub Pages URL을 확인한다.
+13. 새 글을 실제로 발행한 경우에만 Resend 뉴스레터 알림을 보낸다. 중복 발행 방지로 검증만 한 날은 이메일을 보내지 않는다.
    - 모바일 표 대응·프리미엄 브리프형 UTF-8 안전 발송 스크립트 사용:
      `python3 /root/hermes-utils/send_pages_publish_email_premium.py --site "AllWeatherOS" --post "_posts/YYYY-MM-DD-daily-allweather-brief.md" --url "https://ai4tenlab.github.io/allweatheros/.../"`
    - 수신자 기본값: `ai4tenlab@gmail.com`
