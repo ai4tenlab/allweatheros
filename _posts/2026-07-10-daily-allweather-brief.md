@@ -4,6 +4,8 @@ title: "2026년 7월 10일 올웨더 브리프: 전일 미국장·환율·국내
 date: 2026-07-10 05:00:00 +0900
 categories: [daily-brief]
 description: "KST 2026년 7월 10일 05:00 기준, 전일 미국 Nasdaq100·VIX와 미국 국채금리 공식 최신 관측치, 한국은행 ECOS의 원/달러 환율·국내금리를 함께 보며 ISA·연금저축·IRP 자산배분 체크포인트를 정리합니다."
+image: "/assets/images/thumbnails/2026-07-10-daily-allweather-brief.png"
+image_alt: "AllWeatherOS 절세계좌 자산배분 브리프 블로그 썸네일"
 ---
 
 ## 3줄 요약
