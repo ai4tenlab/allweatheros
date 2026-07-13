@@ -17,6 +17,7 @@
    - 한 문장 답변
    - 오늘의 시장 한눈에 보기 표
    - 오늘의 핵심 경제 뉴스
+   - 전문용어 쉽게 풀어쓰기: 일반인이 낯설 수 있는 금융·거시경제·ETF 용어 5~8개를 쉬운 한국어로 설명한다. 예: `장기금리 = 오래 돈을 빌릴 때 적용되는 이자율`, `괴리율 = ETF 가격과 실제 자산가치가 얼마나 벌어졌는지 보는 차이`.
    - 자산군별 영향 분석
    - 절세계좌 투자자 체크포인트
    - AllWeatherOS 관심 ETF 관찰 포인트
@@ -34,10 +35,14 @@
 9. 모바일 친화 규칙:
    - 표는 AEO/GEO를 위해 유지하되, 모바일에서 한글이 세로로 찢어지지 않도록 너무 많은 열을 만들지 않는다.
    - 점수표/시장표/ETF표는 가능하면 핵심 열 4~6개로 제한하고, 긴 설명은 표 밖 문단이나 체크리스트로 뺀다.
+   - 전문용어는 처음 나올 때 쉬운 말로 풀고, 본문 중간에 `## 전문용어 쉽게 풀어쓰기` 섹션을 반드시 넣는다.
+   - 용어 풀이 섹션은 초보 투자자도 이해할 수 있는 생활 언어로 쓰며, 영어 약어·원어는 괄호에 넣는다.
    - 발행 후 블로그와 뉴스레터 모두 표가 모바일에서 강제 압축되지 않는지 확인한다.
 10. 검증:
    - 필수 섹션 확인
    - FAQ 5개 이상 확인
+   - `## 전문용어 쉽게 풀어쓰기` 섹션 존재 확인
+   - 전문용어 풀이가 5개 이상 있고, 각 항목이 쉬운 한국어 설명을 포함하는지 확인
    - JSON-LD 존재 확인
    - 출처 URL 접근 가능 여부 확인
    - 썸네일 파일 존재, 이미지 HTTP 200, `.post-thumbnail`, `og:image`, `twitter:card` 확인
@@ -51,7 +56,7 @@
 13. GitHub Pages URL 검증과 Resend 뉴스레터 발송은 반드시 deterministic guard로 마무리한다.
    - URL은 `_config.yml`의 `permalink: /:categories/:year/:month/:day/:title/`를 반영한다. AllWeatherOS 기본 URL 예시는 `https://ai4tenlab.github.io/allweatheros/daily-brief/YYYY/MM/DD/daily-allweather-brief/`이다.
    - 새 글을 발행한 경우에는 아래 guard를 실행한다. 오늘 글이 이미 있더라도 이메일 marker가 없으면 guard가 1회 발송하고, marker가 있으면 `EMAIL_ALREADY_SENT`로 중복을 막는다.
-   - 반드시 `EMAIL_STATUS=EMAIL_SENT` 또는 `EMAIL_STATUS=EMAIL_ALREADY_SENT`를 확인한다. `EMAIL_ERROR`/URL 실패면 작업을 성공으로 보고하지 말고 원인을 수정한다.
+   - 반드시 `LIVE_URL_VERIFIED=yes`와 `EMAIL_STATUS=EMAIL_SENT` 또는 `EMAIL_STATUS=EMAIL_ALREADY_SENT`를 확인한다. `EMAIL_ERROR`/URL 실패면 작업을 성공으로 보고하지 말고 원인을 수정한다.
    - 명령 예시:
      `python3 /root/hermes-utils/verify_pages_post_and_email.py --site "AllWeatherOS" --repo /root/allweatheros --post "_posts/YYYY-MM-DD-daily-allweather-brief.md" --url "https://ai4tenlab.github.io/allweatheros/daily-brief/YYYY/MM/DD/daily-allweather-brief/"`
    - 수신자 기본값: `ai4tenlab@gmail.com`; 이메일에는 Premium Hero, Executive Summary, 본문 전체, 발행 URL이 포함되어야 한다.
