@@ -12,7 +12,7 @@ title: AllWeatherOS
     <a class="button ghost" href="{{ '/about' | relative_url }}">운영 철학</a>
   </div>
   <figure class="hero-visual">
-    <img src="{{ '/assets/images/hero/allweatheros-hero.svg' | relative_url }}" alt="올웨더 자산배분과 공익 금융을 상징하는 일러스트" loading="eager">
+    <img src="{{ '/assets/images/hero/allweatheros-hero.png' | relative_url }}" alt="올웨더 자산배분과 공익 금융을 상징하는 일러스트" loading="eager">
   </figure>
 </section>
 
