@@ -3,30 +3,38 @@ layout: default
 title: AllWeatherOS
 ---
 
-# AllWeatherOS
+<section class="hero">
+  <p class="eyebrow">AllWeatherOS · Public Finance · Asset Allocation</p>
+  <h1>경제의 모든 계절에 흔들리지 않는 금융 지식.</h1>
+  <p>ISA·연금저축·IRP 같은 절세계좌를 중심으로 ETF, 채권, 금, 원자재, 리츠, 현금성 자산을 시민의 언어로 해석합니다.</p>
+  <div class="cta-row">
+    <a class="button" href="#latest">최신 포스팅 보기</a>
+    <a class="button ghost" href="{{ '/about' | relative_url }}">운영 철학</a>
+  </div>
+</section>
 
-**경제의 모든 계절에 대응하는 공익 금융 지식 블로그**
+<section class="principles">
+  <div><strong>절세계좌 중심</strong><span>ISA·연금저축·IRP 관점으로 설명합니다.</span></div>
+  <div><strong>잃지 않는 배분</strong><span>올웨더 철학과 위험관리를 우선합니다.</span></div>
+  <div><strong>출처 기반</strong><span>중앙은행·정부·거래소·운용사 원문을 우선합니다.</span></div>
+  <div><strong>투자 권유 아님</strong><span>판단 기준과 금융 문해력을 남깁니다.</span></div>
+</section>
 
-AllWeatherOS는 ISA·연금저축·IRP 같은 절세계좌를 중심으로 ETF, 채권, 금, 원자재, 리츠, 현금성 자산, 글로벌 주식을 해석해 한국 개인 투자자가 **잃지 않는 장기 자산배분**을 이해하도록 돕습니다.
-
-## 3줄 요약
-
-- AllWeatherOS는 특정 상품 추천이 아니라 <strong>금융 문해력과 자산배분 판단력</strong>을 높이는 공익 콘텐츠입니다.
-- 매일 경제·금융·거시 뉴스가 어떤 자산군에 영향을 주는지 <strong>객관적·출처 기반</strong>으로 설명합니다.
-- 모든 글은 AEO·GEO를 고려해 <strong>정의, 표, FAQ, 출처, 면책문구</strong>를 포함합니다.
-
-## 주요 카테고리
-
-| 카테고리 | 설명 |
-|---|---|
-| Daily Brief | 매일 경제·금융·거시 시황 요약 |
-| Tax Accounts | ISA·연금저축·IRP·일반계좌 전략 |
-| Asset Allocation | ETF·채권·금·원자재·리츠·현금성 자산 |
-| All Weather | 경제 계절별 방어형 포트폴리오 철학 |
-| Financial Literacy | 금융상품·세금·위험 설명 |
-
-## 최신 글
-
-{% for post in site.posts limit:5 %}
-- [{{ post.title }}]({{ post.url | relative_url }})
-{% endfor %}
+<section id="latest">
+  <h2>최신 포스팅</h2>
+  <div class="post-list">
+    {% for post in site.posts limit:12 %}
+      <article class="post-card">
+        {% if post.image %}
+        <a class="post-thumb-link" href="{{ post.url | relative_url }}" aria-label="{{ post.title }}">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">
+        </a>
+        {% endif %}
+        <p class="date">{{ post.date | date: "%Y.%m.%d" }}</p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.description | default: post.excerpt | strip_html | truncate: 140 }}</p>
+        <a class="read-more" href="{{ post.url | relative_url }}">읽기 →</a>
+      </article>
+    {% endfor %}
+  </div>
+</section>
