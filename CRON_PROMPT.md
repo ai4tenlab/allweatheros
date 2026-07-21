@@ -37,6 +37,7 @@
    - 출처와 확인 근거
    - 투자 유의사항
    - Article and FAQPage JSON-LD
+   - 공개 본문에는 내부 주제 선정 기준, 후보군, 점수표, 선정 과정, 운영 판단 메모를 넣지 않는다. 구독자에게는 당일 선정된 금융·거시 콘텐츠만 충실하게 제공한다.
 7. 안전 문구: “본 글은 경제·금융 교육 목적이며 특정 금융상품의 매수·매도 추천이 아닙니다.”를 포함한다. 개인 보유종목·진입가 등 민감정보는 절대 노출하지 않는다.
 8. 썸네일 생성 규칙:
    - `k-drama-blog-thumbnail` 스킬 기준으로 16:9 프리미엄 K-드라마형 썸네일을 생성하되, AllWeatherOS는 “금융 데스크의 정장 남성 1인” 장면을 반복하지 않는다.
@@ -83,6 +84,6 @@
    - 명령 예시:
      `python3 /root/hermes-utils/verify_pages_post_and_email.py --site "AllWeatherOS" --repo /root/allweatheros --post "_posts/YYYY-MM-DD-daily-allweather-brief.md" --url "https://ai4tenlab.github.io/allweatheros/daily-brief/YYYY/MM/DD/daily-allweather-brief/"`
    - 수신자 기본값: `ai4tenlab@gmail.com`; 이메일에는 Premium Hero, Executive Summary, 본문 전체, 발행 URL이 포함되어야 한다.
-14. 최종 보고: 발행 URL, 커밋 해시, 오늘의 핵심 변수, `LIVE_URL_VERIFIED`, `EMAIL_STATUS`, guard 출력 요약을 한국어로 간결히 보고한다.
+14. 텔레그램 최종 보고는 한국어로 간결하게 한다. 반드시 완료 여부와 **확인 가능한 GitHub Pages 발행 URL**을 포함한다. 내부 후보군·점수표·선정 과정은 보고하지 않는다. 형식 예시: `✅ 발행 완료: [제목]\nURL: https://...\nLIVE_URL_VERIFIED=yes · EMAIL_STATUS=...`
 
 중요: 가격·금리·지수·정책·날짜를 만들지 말 것. 접근 실패 시 실패 사실을 명시하고 대체 가능한 공식 출처를 찾는다.
