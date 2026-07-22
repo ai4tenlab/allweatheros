@@ -50,10 +50,15 @@ img, video, iframe { max-width: 100%; height: auto; }
   flex: 0 0 auto;
   color: var(--ink);
   font-size: .98rem;
-  font-weight: 900;
-  letter-spacing: -.035em;
-  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: -.02em;
 }
+.brand small {
+  font-size: .78em;
+  font-weight: 600;
+  color: var(--muted);
+}
+.site-footer a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 nav { display: flex; align-items: center; gap: clamp(14px, 2.6vw, 30px); overflow-x: auto; white-space: nowrap; scrollbar-width: none; }
 nav::-webkit-scrollbar { display: none; }
 nav a { color: rgba(29, 29, 31, .78); font-size: .82rem; font-weight: 600; text-decoration: none; }

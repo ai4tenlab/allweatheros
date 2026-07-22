@@ -1,8 +1,11 @@
-title: AllWeatherOS
-description: 경제의 모든 계절에 대응하는 공익 금융 지식 블로그
+title: "올웨더경제 | AllWeatherOS"
+description: "경제의 계절을 읽고 자산배분의 원칙을 세우는 독립 금융 지식 아카이브"
 url: "https://ai4tenlab.github.io"
 baseurl: "/allweatheros"
 google_site_verification: "6IbvE6STizsI0a21ulmBwJIxUvzBW-VDXOFI_i4fETs"
+brand_name: "올웨더경제"
+brand_alternate_name: "AllWeatherOS"
+author: "올웨더경제 편집부"
 lang: ko-KR
 timezone: Asia/Seoul
 markdown: kramdown
@@ -21,7 +24,7 @@ defaults:
       type: "posts"
     values:
       layout: post
-      author: AllWeatherOS Editorial Desk
+      author: "올웨더경제 편집부"
   - scope:
       path: ""
     values:

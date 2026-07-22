@@ -1,26 +1,25 @@
 ---
 layout: default
-title: AllWeatherOS
 ---
 
 <section class="hero">
-  <p class="eyebrow">AllWeatherOS · Public Finance · Asset Allocation</p>
-  <h1>경제의 모든 계절에 흔들리지 않는 금융 지식.</h1>
-  <p>ISA·연금저축·IRP 같은 절세계좌를 중심으로 ETF, 채권, 금, 원자재, 리츠, 현금성 자산을 시민의 언어로 해석합니다.</p>
+  <p class="eyebrow">올웨더경제 · AllWeatherOS · Economy · Asset Allocation</p>
+  <h1>예측보다 대비를 말하는 경제·자산배분 아카이브.</h1>
+  <p>성장과 침체, 인플레이션과 디플레이션처럼 서로 다른 경제 환경을 읽고, 주식·채권·현금성 자산·원자재·부동산·환율·절세계좌의 역할과 위험을 원칙 중심으로 해석합니다.</p>
   <div class="cta-row">
     <a class="button" href="#latest">최신 포스팅 보기</a>
     <a class="button ghost" href="{{ '/about' | relative_url }}">운영 철학</a>
   </div>
   <figure class="hero-visual">
-    <img src="{{ '/assets/images/hero/allweatheros-hero.png' | relative_url }}" alt="올웨더 자산배분과 공익 금융을 상징하는 일러스트" loading="eager">
+    <img src="{{ '/assets/images/hero/allweatheros-hero.png' | relative_url }}" alt="경제 환경의 변화와 자산배분 원칙을 상징하는 편집 이미지" loading="eager">
   </figure>
 </section>
 
-<section class="principles">
-  <div><strong>절세계좌 중심</strong><span>ISA·연금저축·IRP 관점으로 설명합니다.</span></div>
-  <div><strong>잃지 않는 배분</strong><span>올웨더 철학과 위험관리를 우선합니다.</span></div>
-  <div><strong>출처 기반</strong><span>중앙은행·정부·거래소·운용사 원문을 우선합니다.</span></div>
-  <div><strong>투자 권유 아님</strong><span>판단 기준과 금융 문해력을 남깁니다.</span></div>
+<section class="principles" aria-label="올웨더경제의 편집 원칙">
+  <div><strong>관측</strong><span>금리·물가·환율·정책으로 경제 환경의 변화를 읽습니다.</span></div>
+  <div><strong>구성</strong><span>자산별 역할과 위험을 이해하는 배분 원칙을 살핍니다.</span></div>
+  <div><strong>지속</strong><span>ISA·연금·세금·현금흐름을 장기 금융생활과 연결합니다.</span></div>
+  <div><strong>출처 기반</strong><span>중앙은행·정부·거래소·국제기구 원문을 우선합니다.</span></div>
 </section>
 
 <section id="latest">
