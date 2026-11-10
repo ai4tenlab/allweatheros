@@ -137,7 +137,18 @@ ECB는 가구마다 소비 습관이 다르고, 평균적인 바구니와 개인
 
 이 글은 공익적 경제·금융교육을 위한 일반 정보다. 특정 금융상품의 매수·매도·보유를 권유하지 않으며 개인별 투자·세무·대출 상담을 대신하지 않는다. 금융투자에는 원금 손실 가능성이 있고, 이 글은 손실 회피나 수익을 보장하지 않는다. 계약·보장·세금의 구체적인 내용은 해당 기관의 최신 원문과 본인 조건을 따로 확인해야 한다.
 
-## 관련 글
+## 출처와 참고 근거
+
+- [ECB: What is inflation?](https://www.ecb.europa.eu/ecb-and-you/explainers/tell-me-more/html/what_is_inflation.en.html) — 본문 [2]
+- [Federal Reserve: 2026년 10월 28일 FOMC 성명](https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm) — 본문 [3]
+- [Investor.gov: Bonds](https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds) — 본문 [4]
+- [Investor.gov: Asset Allocation](https://www.investor.gov/introduction-investing/getting-started/asset-allocation) — 본문 [5]
+- [Investor.gov: What is Risk?](https://www.investor.gov/introduction-investing/investing-basics/what-risk) — 본문 [6]
+- [Investor.gov: Commodities](https://www.investor.gov/introduction-investing/investing-basics/investment-products/commodities) — 본문 [7]
+- [Investor.gov: REITs](https://www.investor.gov/introduction-investing/investing-basics/investment-products/real-estate-investment-trusts-reits) — 본문 [8]
+- [Federal Reserve: FOMC 회의 달력](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm) — 본문 [9]
+
+## 이 글과 함께 읽어보세요
 
 - [AllWeatherOS란 무엇인가?]({{ '/all-weather/2026/07/06/what-is-allweatheros/' | relative_url }}) — 사이트의 자산배분 교육 취지. 제목의 ‘견딘다’는 표현이 손실을 없앤다는 약속은 아니다.
 - [8월 물가와 유가로 본 가계 현금흐름: 2026년 9월 3일 글]({{ '/daily-brief/2026/09/03/daily-allweather-brief/' | relative_url }}) — 과거 기록이며, 그 글의 수치를 오늘의 물가·환율·금리로 사용하지 않는다. 이 글의 최신 사실을 뒷받침하는 출처도 아니다.
@@ -157,14 +168,3 @@ ECB는 가구마다 소비 습관이 다르고, 평균적인 바구니와 개인
   "mainEntityOfPage": {{ page.url | absolute_url | jsonify }}
 }
 </script>
-
-## Sources
-
-[2] <https://www.ecb.europa.eu/ecb-and-you/explainers/tell-me-more/html/what_is_inflation.en.html> — ECB What is inflation?
-[3] <https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm> — Federal Reserve FOMC statement, October 28 2026
-[4] <https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds> — Investor.gov Bonds FAQs
-[5] <https://www.investor.gov/introduction-investing/getting-started/asset-allocation> — Investor.gov Asset Allocation and Diversification
-[6] <https://www.investor.gov/introduction-investing/investing-basics/what-risk> — Investor.gov What is Risk?
-[7] <https://www.investor.gov/introduction-investing/investing-basics/investment-products/commodities> — Investor.gov Commodities
-[8] <https://www.investor.gov/introduction-investing/investing-basics/investment-products/real-estate-investment-trusts-reits> — Investor.gov Real Estate Investment Trusts
-[9] <https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm> — Federal Reserve FOMC meeting calendar
