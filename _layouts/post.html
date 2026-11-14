@@ -9,7 +9,7 @@ layout: default
   </header>
   {% if page.image %}
   <figure class="post-thumbnail">
-    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}" loading="lazy">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}" loading="eager" fetchpriority="high">
   </figure>
   {% endif %}
   {{ content }}
