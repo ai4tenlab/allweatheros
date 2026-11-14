@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "이자를 받는 채권도 왜 손실이 날까? 금리·가격·만기를 나눠 보는 법"
-date: 2026-11-12 19:25:00 +0900
+date: 2026-11-14 11:17:00 +0900
 categories: [all-weather]
 tags: [채권, 금리, 금융교육, 자산배분, 현금흐름]
 author: "Viki · 올웨더경제 편집부"
@@ -121,7 +121,7 @@ image_alt: "교육 공간에서 두 성인이 나무 블록과 모래시계로 �
 
 ## 출처와 참고 근거
 
-**원문 확인일: 2026년 11월 12일 KST.** 미국 재무부의 발행 구조와 FINRA의 교육 원문을 확인했다. 미국의 거래·세금·보장 제도를 한국 제도로 설명하지 않았으며, 실시간 가격이나 당일 시장 동향은 사용하지 않았다. 표의 숫자는 별도로 검산한 가정이다.
+**원문 재확인·공개일: 2026년 11월 14일 KST.** 11월 12일 작성한 원고를 공개에 앞서 다시 확인했다. 미국 재무부의 발행 구조와 FINRA의 교육 원문을 확인했다. 미국의 거래·세금·보장 제도를 한국 제도로 설명하지 않았으며, 실시간 가격이나 당일 시장 동향은 사용하지 않았다. 표의 숫자는 별도로 검산한 가정이다.
 
 1. [FINRA: Bonds](https://www.finra.org/investors/investing/investment-products/bonds) — 채권의 구조, 만기 전 매도, 자산배분 역할, 신용·유동성·물가·통화 위험의 근거.
 2. [FINRA: Brush Up on Bonds: Interest Rate Changes and Duration](https://www.finra.org/investors/insights/bonds-interest-rate-changes-duration) — 2024년 9월 19일 교육자료. 금리·가격의 관계와 만기·듀레이션의 차이. 오늘의 금리 판단 자료가 아니다.
